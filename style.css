@@ -40,6 +40,19 @@ nav a:hover {
   color: #005a8e;
 }
 
+img { 
+	max-width: 100%; height: auto; 
+}
+
+.audio-links a {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+
 .advisor {
   max-width: 800px;
   margin: 30px auto;
@@ -201,6 +214,22 @@ nav a:hover {
 
 /* MOBILE STYLES */
 @media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+	.footer { 
+		font-size: 0.8em; 
+		padding: 8px 0; 
+	}
+	
+  .story {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
   .nav-links {
     position: fixed;
     top: 70px;
@@ -244,6 +273,16 @@ nav a:hover {
     transform: rotate(-45deg) translate(6px, -6px);
   }
 }
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.4em;
+  }
+  p {
+    font-size: 0.95em;
+  }
+}
+
 
 /*SYNOPSIS*/
 
